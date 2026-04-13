@@ -1,36 +1,29 @@
-// services/api.js
-import axios from "axios";
-
-// Base API instance
-const API = axios.create({
-  baseURL: "http://localhost:3001", // json-server
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+const BASE_URL = "";
 
 // ================= USER =================
 export const getUser = async () => {
-  const res = await API.get("/user");
-  return res.data;
+  const res = await fetch("/db.json");
+  const data = await res.json();
+  return data.user;
 };
 
 // ================= PROJECTS =================
 export const getProjects = async () => {
-  const res = await API.get("/projects");
-  return res.data;
+  const res = await fetch("/db.json");
+  const data = await res.json();
+  return data.projects;
 };
 
 // ================= LEADERBOARD =================
 export const getLeaderboard = async () => {
-  const res = await API.get("/leaderboard");
-  return res.data;
+  const res = await fetch("/db.json");
+  const data = await res.json();
+  return data.leaderboard;
 };
 
-// ================= NOTES (POST) =================
+// ================= NOTES (POST not possible in static JSON)
+// Fake POST (for UI only)
 export const addNote = async (noteData) => {
-  const res = await API.post("/notes", noteData);
-  return res.data;
+  console.log("Mock add note:", noteData);
+  return { success: true, data: noteData };
 };
-
-export default API;
