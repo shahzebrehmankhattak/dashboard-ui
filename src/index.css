@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.no-scrollbar {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.progress-striped {
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent);
+    background-size: 20px 20px;
+}
+
+.gold-glow {
+    box-shadow: -10px 0px 25px -5px rgba(220, 38, 38, 0.4);
+}
+
+.sidebar-radius {
+    border-radius: 0 45px 0 0;
+}
+
+.leaderboard-bg {
+    background: linear-gradient(180deg, #0a254d 0%, #0056D2 100%);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #0056D2;
+    border-radius: 10px;
+}
+
+
+
+/* Mobile Header Curve */
+.mobile-curve {
+    background: linear-gradient(180deg, #3B82F6 0%, #8bbdf9 100%);
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+}
+
+/* The App Frame - This keeps the design identical to the image on Desktop */
+.app-container {
+    width: 100%;
+    /* max-width: 430px;  */
+    height: 100vh;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Desktop specific styling */
+@media (min-width: 1024px) {
+    .app-container {
+        height: 92vh;
+        border-radius: 35px;
+    }
+}
+
+@media (max-width: 381px) {
+    .margin {
+        margin-top: 30px !important;
+    }
+
+
+}
+
+@media (max-width: 324px) {
+    .margin {
+        margin-bottom: 10px !important;
+        position: absolute;
+        top: 250px;
+        width: 100%;
+    }
+
+    .bottt {
+
+        margin-top: 70px !important;
+    }
+
+    .text {
+        font-size: 10px !important;
+    }
+
+}
+
+.header-curve {
+    background: #008DD2;
+
+    /* Yeh value curve ko top se perfectly goll aur smooth banayegi */
+    /* border-bottom-left-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    clip-path: ellipse(130% 130% at 50% 130%);
+
+    padding-top: 80px;
+    padding-bottom: 0px !important;
+    width: 100%;
+}
+
+.progress-striped {
+    background-image: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent);
+    background-size: 15px 15px;
+}
+
+/* Firefox ke liye scrollbar styling */
+.custom-scrollbar {
+    /* Format: scrollbar-color: [Thumb Color] [Track Color] */
+    scrollbar-color: #0088CC #f1f1f1;
+    scrollbar-width: thin !important;
+    /* Scrollbar ko patla karne ke liye */
+}
+
+.custom-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox: Scrollbar gayab kar dega arrows ke sath */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari: Scrollbar gayab */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    /* Scrollbar width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #0056D2;
+    /* Theme color */
+    border-radius: 10px;
+}
+
+/* Container height fix for Desktop/Mobile */
+.mobile-gradient {
+    background: radial-gradient(circle at top, #B9E2FC 0%, #FFFFFF 70%);
+}

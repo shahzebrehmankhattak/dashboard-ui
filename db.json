@@ -1,0 +1,56 @@
+{
+  "user": {
+    "id": 1,
+    "name": "Developer",
+    "points": 400,
+    "currentXP": 500,
+    "nextXP": 750,
+    "targetXP": 900,
+    "avatar": "./src/assets/profile.jpg"
+  },
+  "projects": [
+    { "id": 1,"avatar": "./src/assets/adminlead.jpg" ,"title": "Admin logica test 1", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 2,"avatar": "./src/assets/profile.jpg" , "title": "Admin logica test 2", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 3,"avatar": "./src/assets/adminlead.jpg" , "title": "Admin logica test 3", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 4,"avatar": "./src/assets/profile.jpg" , "title": "Admin logica test 4", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 5,"avatar": "./src/assets/adminlead.jpg" , "title": "Admin logica test 5", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 5,"avatar": "./src/assets/profile.jpg" , "title": "Admin logica test 6", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 6,"avatar": "./src/assets/adminlead.jpg" , "title": "Admin logica test 7", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." },
+    { "id": 7,"avatar": "./src/assets/profile.jpg" , "title": "Admin logica test 8", "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry." }
+  ],
+  "leaderboard": [
+    {
+      "id": 1,
+      "rank": 1,
+      "name": "Giulia Verdini",
+      "score": 2980,
+      "isWinner": true,
+      "stars": 5
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "name": "Maria Rossi",
+      "score": 2721,
+      "isWinner": false,
+      "stars": 4
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "name": "Luca Bianchi",
+      "score": 2579,
+      "isWinner": false,
+      "stars": 3
+    },
+    {
+      "id": 4,
+      "rank": 4,
+      "name": "Anna Verdi",
+      "score": 2450,
+      "isWinner": false,
+      "stars": 3
+    }
+  ],
+  "notes": []
+}
